@@ -1,0 +1,75 @@
+Save Client
+Endpoint: localhost:8080/api/v1/cliente
+
+{
+  "firstName": "Kevin",
+  "lastName": "Balvin",
+  "documentType": "CC",
+  "documentNumber": "12345670",
+  "email": "kevin@example.com",
+  "phoneNumber": "3001234567",
+  "address": "Calle 10 #20-30",
+  "city": "Medellin",
+  "registrationDate": "2025-01-01",
+  "birthDate": "2000-05-15",
+  "clientStatus": "Active"
+}
+
+
+
+
+
+Save Employee 
+Endpoint: localhost:8080/api/v1/empleado
+
+{
+  "firstName": "Ana",
+  "lastName": "Gómez Pérez",
+  "documentType": "Cédula de Ciudadanía",
+  "documentNumber": "103987654321",
+  "email": "ana.gomez@empresa.com",
+  "phoneNumber": "3001234567",
+  "position": "Gerente de Marketing",
+  "salary": 5500.50,
+  "hireDate": "2024-08-15",
+  "address": "Avenida Siempre Viva 742",
+  "employmentStatus": "ACTIVO"
+}
+
+
+
+
+Save Order
+Endpoint: localhost:8080/api/v1/pedido
+
+{
+  "fechaPedido": "2025-12-09",
+  "horaPedido": "11:00:00",
+  "estado": "PROCESANDO",
+  "montoTotal": 1250.99,
+  "idCliente": 25,
+  "direccionEnvio": "Avenida Siempre Viva 456, Piso 3",
+  "ciudadEnvio": "Bogotá",
+  "metodoPago": "Transferencia Bancaria",
+  "numeroSeguimiento": "TLW456BGT789",
+  "notas": "Empaquetar la mercancía con protección adicional. Contactar al cliente solo por email."
+}
+
+
+
+Save Comic
+Endpoint: localhost:8080/api/v1/comic
+
+{
+  "titulo": "The Amazing Spider-Man",
+  "autor": "Stan Lee",
+  "editorial": "Marvel Comics",
+  "sinopsis": "Peter Parker enfrenta nuevos desafíos mientras equilibra su vida como héroe.",
+  "genero": "Superhero",
+  "stockDisponible": 50,
+  "fechaDePublicacion": "2024-05-10",
+  "precio": 19.99,
+  "idioma": "English",
+  "estado": "New"
+}
+
