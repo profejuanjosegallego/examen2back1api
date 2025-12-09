@@ -30,4 +30,109 @@ public class Comic {
     private Integer cantidadDisponible;
     @Column(nullable=false, unique=true)
     private String isbn;
+
+    public Comic() {
+    }
+
+    public Comic(Long idComic, String nombreComic, String autor, String editorial, LocalDate fechaPublicacion, Integer numeroEdicion, String genero, Double precio, Boolean estaDisponible, Integer cantidadDisponible, String isbn) {
+        this.idComic = idComic;
+        this.nombreComic = nombreComic;
+        this.autor = autor;
+        this.editorial = editorial;
+        this.fechaPublicacion = fechaPublicacion;
+        this.numeroEdicion = numeroEdicion;
+        this.genero = genero;
+        this.precio = precio;
+        this.estaDisponible = estaDisponible;
+        this.cantidadDisponible = cantidadDisponible;
+        this.isbn = isbn;
+    }
+
+    public Long getIdComic() {
+        return idComic;
+    }
+
+    public void setIdComic(Long idComic) {
+        this.idComic = idComic;
+    }
+
+    public String getNombreComic() {
+        return nombreComic;
+    }
+
+    public void setNombreComic(String nombreComic) {
+        this.nombreComic = nombreComic;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getEditorial() {
+        return editorial;
+    }
+
+    public void setEditorial(String editorial) {
+        this.editorial = editorial;
+    }
+
+    public LocalDate getFechaPublicacion() {
+        return fechaPublicacion;
+    }
+
+    public void setFechaPublicacion(LocalDate fechaPublicacion) {
+        this.fechaPublicacion = fechaPublicacion;
+    }
+
+    public Integer getNumeroEdicion() {
+        return numeroEdicion;
+    }
+
+    public void setNumeroEdicion(Integer numeroEdicion) {
+        this.numeroEdicion = numeroEdicion;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
+    public Boolean getEstaDisponible() {
+        return estaDisponible;
+    }
+
+    public void setEstaDisponible(Boolean estaDisponible) {
+        this.estaDisponible = estaDisponible;
+    }
+
+    public Integer getCantidadDisponible() {
+        return cantidadDisponible;
+    }
+
+    public void setCantidadDisponible(Integer cantidadDisponible) {
+        this.cantidadDisponible = cantidadDisponible;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
 }
