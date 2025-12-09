@@ -46,12 +46,15 @@ public class Order {
     @Column
     private String followingNumber;
 
+    @Column
+    private String shipmentRoute;
+
     // Constructors
 
     public Order() {
     }
 
-    public Order(String sendingAdress, LocalDateTime dateOrder, String orderStatus, BigDecimal totalOrder, String paymentMethod, String clientNotes, BigDecimal shipmentCost, Boolean active, String followingNumber) {
+    public Order(String sendingAdress, LocalDateTime dateOrder, String orderStatus, BigDecimal totalOrder, String paymentMethod, String clientNotes, BigDecimal shipmentCost, Boolean active, String followingNumber, String shipmentRoute) {
         this.sendingAdress = sendingAdress;
         this.dateOrder = dateOrder;
         this.orderStatus = orderStatus;
@@ -61,6 +64,7 @@ public class Order {
         this.shipmentCost = shipmentCost;
         this.active = active;
         this.followingNumber = followingNumber;
+        this.shipmentRoute = shipmentRoute;
     }
 
     // Relations
@@ -157,6 +161,23 @@ public class Order {
         this.followingNumber = followingNumber;
     }
 
+    public String getShipmentRoute() {
+        return shipmentRoute;
+    }
+
+    public void setShipmentRoute(String shipmentRoute) {
+        this.shipmentRoute = shipmentRoute;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+
+    public List<Comic> getComics() {
+        return comics;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
@@ -170,6 +191,7 @@ public class Order {
                 ", shipmentCost=" + shipmentCost +
                 ", active=" + active +
                 ", followingNumber='" + followingNumber + '\'' +
+                ", shipmentRoute='" + shipmentRoute + '\'' +
                 ", client=" + client +
                 ", comics=" + comics +
                 '}';
