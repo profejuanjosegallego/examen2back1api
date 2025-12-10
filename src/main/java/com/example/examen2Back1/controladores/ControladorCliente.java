@@ -1,7 +1,6 @@
 package com.example.examen2Back1.controladores;
 
 import com.example.examen2Back1.modelos.Cliente;
-import com.example.examen2Back1.modelos.Empleado;
 import com.example.examen2Back1.servicios.ServicioCliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

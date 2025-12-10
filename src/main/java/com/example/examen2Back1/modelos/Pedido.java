@@ -33,14 +33,6 @@ public class Pedido {
     @Column(nullable = false)
     private Double totalIva;
 
-    @OneToOne
-    @JoinColumn(name = "Fk_Cliente", referencedColumnName = "idCliente")
-    private Cliente fkCliente;
-
-    @OneToMany
-    @JoinColumn(name = "FK_Comic", referencedColumnName = "idComic")
-    private List<Comic> comics;
-
     public Pedido() {
     }
 
@@ -56,7 +48,6 @@ public class Pedido {
         this.impuesto = impuesto;
         this.peso = peso;
         this.totalIva = totalIva;
-        this.fkCliente = fkCliente;
     }
 
     public Long getIdPedido() {
@@ -147,11 +138,5 @@ public class Pedido {
         this.totalIva = totalIva;
     }
 
-    public Cliente getFkCliente() {
-        return fkCliente;
-    }
 
-    public void setFkCliente(Cliente fkCliente) {
-        this.fkCliente = fkCliente;
-    }
 }

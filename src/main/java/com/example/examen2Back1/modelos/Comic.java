@@ -31,19 +31,6 @@ public class Comic {
     @Column(nullable=false, unique=true)
     private String isbn;
 
-    @ManyToOne
-    @JoinColumn(name = "Id_pedido")
-    private Pedido pedido;
-
-    public Pedido getPedido() {
-        return pedido;
-    }
-
-    public void setPedido(Pedido pedido) {
-        this.pedido = pedido;
-    }
-
-
     public Comic() {
     }
 

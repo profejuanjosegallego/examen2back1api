@@ -30,9 +30,6 @@ public class Cliente {
     @Column(nullable = false)
     private String nombreUsuario;
 
-    @OneToOne (mappedBy = "cliente")
-    private Cliente cliente;
-
     public Cliente() {
     }
 
@@ -48,7 +45,6 @@ public class Cliente {
         this.tipoDocumento = tipoDocumento;
         this.numeroDcumento = numeroDcumento;
         this.nombreUsuario = nombreUsuario;
-        this.cliente = cliente;
     }
 
     public Long getIdCliente() {
@@ -137,13 +133,5 @@ public class Cliente {
 
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
     }
 }
