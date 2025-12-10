@@ -4,8 +4,9 @@ import com.example.examen2Back1.modelos.Comic;
 import com.example.examen2Back1.repositorios.IComic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
+@Service
 public class ServicioComic {
     @Autowired
     private IComic repositorio;
