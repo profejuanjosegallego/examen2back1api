@@ -3,6 +3,7 @@ package com.example.examen2Back1.modelos;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 public class Pedido {
@@ -33,8 +34,12 @@ public class Pedido {
     private Double totalIva;
 
     @OneToOne
-    @JoinColumn(name = "Fk_Cliente", referencedColumnName = "idCLiente")
+    @JoinColumn(name = "Fk_Cliente", referencedColumnName = "idCliente")
     private Cliente fkCliente;
+
+    @OneToMany
+    @JoinColumn(name = "FK_Comic", referencedColumnName = "idComic")
+    private List<Comic> comics;
 
     public Pedido() {
     }
