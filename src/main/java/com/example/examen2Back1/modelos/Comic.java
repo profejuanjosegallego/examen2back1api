@@ -32,7 +32,7 @@ public class Comic {
     private String isbn;
 
     @ManyToOne
-    @JoinColumn(name = "id_pedido")
+    @JoinColumn(name = "Id_pedido")
     private Pedido pedido;
 
     public Pedido getPedido() {
