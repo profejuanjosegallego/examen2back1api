@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/comicapi/v1/cliente")
 public class ControladorCliente {
-/*
+
     @Autowired
     ServicioCliente servicioCliente;
 
     @PostMapping
-    //public ResponseEntity<Cliente> crearCliente(@RequestBody Cliente datos) {
+    public ResponseEntity<Cliente> crearCliente(@RequestBody Cliente datos) {
 
         Cliente respuestaApi = this.servicioCliente.guardarCliente(datos);
-    } */
+        return ResponseEntity.ok().body(respuestaApi);
+    }
 }
