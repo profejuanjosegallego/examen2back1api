@@ -77,4 +77,20 @@ Debes verificar que:
 
 ### 4. Pruebas con cliente REST (2 puntos)
 
-- Evidencias claras de los **4 endpoints POST** funcionando.
+- Evidencias claras de los **4 endpoints POST** funcionando.<img width="719" height="402" alt="image_720" src="https://github.com/user-attachments/assets/ad967e25-6e5a-4fe8-ac83-476dcd7504d9" />
+<img width="720" height="363" alt="image_720" src="https://github.com/user-attachments/assets/4f1c7e34-e2ae-41e8-9f0f-a265adb9eb83" />
+<img width="720" height="380" alt="image_720" src="https://github.com/user-attachments/assets/2216e92b-c73a-4937-addf-8cc387f41519" />
+<img width="720" height="407" alt="image_720" src="https://github.com/user-attachments/assets/ae92f269-fdc0-49fa-afa8-7af715370580" />
+<img width="720" height="405" alt="image_720" src="https://github.com/user-attachments/assets/de78fd59-d2de-4094-b590-18293ac15339" />
+<img width="719" height="417" alt="image_720" src="https://github.com/user-attachments/assets/8d119d35-94e9-44fb-8727-8bff63721e72" />
+<img width="720" height="397" alt="image_720" src="https://github.com/user-attachments/assets/2766075b-8f6d-4eb8-81b1-e048d0ac9c68" />
+
+
+
+
+
+
+
+
+
+
